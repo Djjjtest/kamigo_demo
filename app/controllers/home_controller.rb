@@ -18,6 +18,7 @@ class HomeController < ApplicationController
       @messsage = "你是作者，可以進行操作 "
     else
       @messsage = "你沒有權限進行操作"
+    end
   end
   
   private
