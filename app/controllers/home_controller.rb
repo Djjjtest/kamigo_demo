@@ -17,7 +17,7 @@ class HomeController < ApplicationController
     dices = [1, 2, 3, 4, 5, 6]
     
     if user_id == "Uca5cd5399cac936c1d3e7b3e4d06b0b7"
-      dices +=[6, 6, 6, 6]
+      dices = [6]
     end
 
     @messsage = "你擲出的點數為：#{dices.sample}"
