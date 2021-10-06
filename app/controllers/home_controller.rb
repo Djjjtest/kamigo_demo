@@ -16,7 +16,8 @@ class HomeController < ApplicationController
     user_id = params.dig(:source_user_id)
     dices = [1, 2, 3, 4, 5, 6]
     
-    if user_id == "Uca5cd5399cac936c1d3e7b3e4d06b0b7"
+    #if user_id == "Uca5cd5399cac936c1d3e7b3e4d06b0b7"
+    if user_id == "abc"
       dices = [6]
     end
 
