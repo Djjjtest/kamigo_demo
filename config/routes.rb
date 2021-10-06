@@ -18,7 +18,9 @@ Rails.application.routes.draw do
 
   # todo
   resources :todos
-
+  
+  get "你好嗎？", to: "home#greeting"
+  
   # menu
   get "index", to: "home#index"
   get "menu", to: "home#menu"
