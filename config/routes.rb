@@ -36,7 +36,7 @@ Rails.application.routes.draw do
   #丟骰子
   get "丟骰子", to: "home#draw_dice"
 
-  #出包理由
+  #出包理由test
   get "出包理由", to: "home#fun_sloti1"
 
 
