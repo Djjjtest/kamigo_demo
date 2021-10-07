@@ -23,11 +23,47 @@ class HomeController < ApplicationController
 
     @messsage = "你擲出的點數為：#{dices.sample}"
   end
+  
+  
 
   def fun_sloti1
-    part1 = ["頭1", "頭2", "頭3"].sample
-    part2 = ["中1", "中2", "中3"].sample
-    part3 = ["尾1", "尾2", "尾3"].sample
+    part1 = [
+      "客戶那邊的",
+      "我們的",
+      "負責談需求的",
+      "負責這個部分的",
+      "直到上線前一天",
+      "(雙手一攤)"
+    ].sample
+    
+    part2 = [
+      "主管",
+      "工程師",
+      "設計師",
+      "外包",
+      "ser",
+      "聯絡窗口"
+    ].sample
+
+    part3 = [
+      "當初沒有講清楚",
+      "一直換",
+      "說他肚子不舒服",
+      "擺爛不想做了",
+      "突然開始放長假",
+      "去生小孩了",
+      "離職了",
+      "都沒甚麼sense",
+      "都沒有跟我講",
+      "以為這些不用做",
+      "一直在狀況外",
+      "做事拖拖拉拉",
+      "還搞不清楚狀況",
+      "Quality有問題",
+      "東西一直改",
+      "根本就是在整我",
+      "突然就沒來了",
+    ].sample
     @messsage = "#{part1}#{part2}#{part3}"
   end
   
