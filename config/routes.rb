@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   get "出包理由", to: "home#fun_sloti1"
 
   #鐵人賽影片列表
+  get "鐵人賽影片列表", to: "videos#index"
 
   # 查詢當下的使用者
   get "profile", to: "home#profile"
