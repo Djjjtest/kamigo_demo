@@ -21,6 +21,11 @@ class VideosController < ApplicationController
         "影片網址": "https://www.youtube.com/watch?v=7EGBX3QsmhA",
         "縮圖網址": "https://i.ytimg.com/vi/7EGBX3QsmhA/hqdefault.jpg",
       },
+      {
+        "標題": "LINE Bot Day5 - LINE 官方帳號圖文選單",
+        "影片網址": "https://www.youtube.com/watch?v=oc7yNStIeFs",
+        "縮圖網址": "https://i.ytimg.com/vi/oc7yNStIeFs/hqdefault.jpg",
+      },
     ]
 
     @keyword = params[:keyword]
