@@ -32,8 +32,13 @@ class VideosController < ApplicationController
           filtered_videos << video
         end
       end
-
       @videos = filtered_videos
+    end
+
+    if @keyword.present?
+      @videos = @videos.filter do |video|
+        video[:標題].include? @keyword
+      end
     end
   end
 end
