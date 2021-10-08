@@ -17,13 +17,14 @@ class VideosController < ApplicationController
         "縮圖網址": "https://i.ytimg.com/vi/45BYBlfkSEo/hqdefault.jpg",
       },
     ]
+    
     @keyword = params[:keyword]
 
     if @keyword.present?
       filtered_videos = []
       @videos.each do |video|
         if video[:標題].include? @keyword
-          filtered_videos  << video
+          filtered_videos << video
         end
       end
 
