@@ -29,16 +29,11 @@ class VideosController < ApplicationController
       filtered_videos = []
       @videos.each do |video|
         if video[:標題].include? @keyword
-          filtered_videos << video
+        filtered_videos << video
         end
       end
-      @videos = filtered_videos
-    end
 
-    if @keyword.present?
-      @videos = @videos.filter do |video|
-        video[:標題].include? @keyword
-      end
+      @videos = filtered_videos
     end
   end
 end
