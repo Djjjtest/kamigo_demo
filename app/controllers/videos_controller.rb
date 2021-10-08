@@ -17,5 +17,6 @@ class VideosController < ApplicationController
         "縮圖網址": "https://i.ytimg.com/vi/45BYBlfkSEo/hqdefault.jpg",
       },
     ]
+    @keyword = params[:keyword]
   end
 end
