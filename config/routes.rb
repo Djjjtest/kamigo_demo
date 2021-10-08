@@ -41,7 +41,7 @@ Rails.application.routes.draw do
 
   #鐵人賽影片列表
   get "鐵人賽影片列表", to: "videos#index"
-  get "鐵人賽影片查詢 *keyword", to: "videos#index"
+  get "鐵人賽影片查詢/*keyword", to: "videos#index"
 
   # 查詢當下的使用者
   get "profile", to: "home#profile"
