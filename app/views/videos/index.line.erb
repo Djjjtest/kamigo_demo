@@ -23,7 +23,7 @@
           "size": "micro",
           "hero": {
             "type": "image",
-            "url": "<%= video|:縮圖網址| %>",
+            "url": "<%= video[:縮圖網址] %>",
             "size": "full",
             "aspectMode": "cover",
             "aspectRatio": "480:360"
@@ -34,7 +34,7 @@
             "contents": [
               {
                 "type": "text",
-                "text": "Day1 - 你適合觀看本系列教學影片嗎？",
+                "text": "<%= video[:標題] %>",
                 "weight": "bold",
                 "size": "sm",
                 "wrap": true
@@ -44,7 +44,7 @@
                 "action": {
                   "type": "uri",
                   "label": "去看看",
-                  "uri": "<%= video|:影片網址| %>"
+                  "uri": "<%= video[:影片網址] %>"
                 },
                 "style": "primary",
                 "height": "sm",
@@ -54,7 +54,7 @@
             "spacing": "sm",
             "paddingAll": "13px"
           }
-        }<%= "," unless video == @videos.last %>
+        }<%= "," if video != @videos.last %>
         <% end %>
       ]
     }

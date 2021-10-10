@@ -36,6 +36,6 @@ class VideosController < ApplicationController
       end
     end
 
-    @videos = @videos.first(4)
+    @videos = @videos.first(12)
   end
 end
