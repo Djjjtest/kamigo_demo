@@ -35,5 +35,7 @@ class VideosController < ApplicationController
         video[:標題].include? @keyword
       end
     end
+
+    @videos = @videos.first(5)
   end
 end
