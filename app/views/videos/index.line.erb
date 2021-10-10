@@ -54,7 +54,7 @@
             "spacing": "sm",
             "paddingAll": "13px"
           }
-        }<%= "," if video != @videos.last %>
+        }<%= "," unless video == @videos.last %>
         <% end %>
       ]
     }
