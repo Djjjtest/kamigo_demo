@@ -61,7 +61,7 @@
     }
   },
 
-  <%= json = Kamiflex.json(self) do
+  <%= raw() Kamiflex.json(self) do
     alt_text "LINE Flex Message Showcase: Local Search"
     carousel do
       bubbles @videos, size: :micro do |video|
@@ -71,5 +71,5 @@
         end
       end
     end
-  end %>
+  end) %>
 ]
