@@ -6,12 +6,6 @@
     },
   <% end %>
   {
-      "type":"text",
-      "text":"<%= @videos.map do |video|
-         "#{video[:標題]}\\n#{video[:影片網址]}"
-      end.join("\\n\\n") %>"
-  },
-  {
     "type": "flex",
     "altText": "This is a Flex Message",
     "contents": {
