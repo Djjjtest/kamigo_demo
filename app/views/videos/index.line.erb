@@ -67,13 +67,13 @@
       bubbles @videos, size: :micro do |video|
         hero video[:縮圖網址], size: :full, aspectMode: "cover", aspectRatio: "480:360"
         body spacing: :sm, paddingAll: "13px" do
-          vertical_box heigh: "80px" do
+          vertical_box height: "80px" do
             text video[:標題], weight: :bold, size: :sm, wrap: true
           end
-          url_button "這是一個 URL Button", video[:影片網址], style: "primary", height: "sm", margin: "10px" 
+          url_button "去看看", video[:影片網址], style: "primary", height: "sm", margin: "10px" 
         end
       end
     end
   end) %>
-  
+
 ]
