@@ -7,6 +7,12 @@
 
 一個含有 LIFF 網址的 qrcode：<br/>
 
+<%= safe_liff_path(path: '/menu', lift_size: :compact).as_svg %>
+
+<%= safe_liff_path(path: '/menu', , lift_size: :tall).as_svg %>
+
+<%= safe_liff_path(path: '/menu', , lift_size: :full).as_svg %>
+
 <%=
   RQRCode::QRCode.new(safe_liff_path(path: '/menu')).as_svg(
     offset: 0,
