@@ -13,7 +13,6 @@ liff.shareTargetPicker(
 .then(function (res) {
   if (res) {
     // succeeded in sending a message through TargetPicker
-    alert(`[${res.status}] Message sent!`)
   } else {
     const [majorVer, minorVer] = (liff.getLineVersion() || "").split('.');
     if (parseInt(majorVer) == 10 && parseInt(minorVer) < 11) {
